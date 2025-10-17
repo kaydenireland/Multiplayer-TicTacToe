@@ -1,3 +1,5 @@
+package tictactoe;
+
 public enum Result {
     InProgress,
     X_Wins,
