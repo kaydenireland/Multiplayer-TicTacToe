@@ -13,11 +13,11 @@ public class Board {
 
     // Getters and Setters
 
-    public char[][] getBoard() {
+    public char[][] get() {
         return board;
     }
 
-    public void resetBoard() {
+    public void clear() {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 board[i][j] = '-';
@@ -25,7 +25,7 @@ public class Board {
         }
     }
 
-    public void printBoard() {
+    public void print() {
         System.out.println();
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
@@ -43,7 +43,7 @@ public class Board {
         }
     }
 
-    public boolean canMove(int row, int col) {
+    public boolean isValidMove(int row, int col) {
         if (row >= 0 && row < 3 && col >= 0 && col < 3) {
             return board[row][col] == '-';
         }
